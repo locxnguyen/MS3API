@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "2.0.1.RELEASE"
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'application'
+}
+
+group 'ms3'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.javassist', name: 'javassist', version: '3.23.1-GA'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: '2.1.9.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.1.9.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.9.RELEASE'
+    runtimeOnly group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+}
+
+mainClassName = 'ms3.test.AppMain'
