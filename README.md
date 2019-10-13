@@ -20,8 +20,15 @@ Contact Management API - This project give ability to (Get, Post, Put & Delete)
 * GitHub
 
 ## Prerequisite
-> MySql 
-> SpringFramework
+* MySql Database Server 
+* Download MySQL Workbench
+https://dev.mysql.com/downloads/installer/
+
+* Download Postmatn
+https://www.getpostman.com/downloads/
+
+* Download IntelliJ IDEA
+https://www.jetbrains.com/idea/
 
 ## Setup
 To Run 
