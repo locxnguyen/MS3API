@@ -12,26 +12,39 @@
 Contact Management API - This project give ability to (Get, Post, Put & Delete)
 
 ## Technologies
-* Oracle Virtual Box 
-* MySql 
+* Oracle Virtual Box to host DB server
+* MySql Maria
 * MySql Workbench
 * Postman 
 * InterlliJ IDEA
 * GitHub
 
 ## Prerequisite
-* MySql Database Server 
-* Download MySQL Workbench
+* MySql Database Server With Scheme name MS3
+* Download MySQL Workbench and install
 https://dev.mysql.com/downloads/installer/
 
-* Download Postmatn
+* Download Postman and Install 
 https://www.getpostman.com/downloads/
 
-* Download IntelliJ IDEA
+* Download IntelliJ IDEA and install
 https://www.jetbrains.com/idea/
 
 ## Setup
-To Run 
+To execute this project, Please following step below
+1. Install IntellJ IDEA
+2. Maria Database Server 
+3. Get hostname or ip address of MySQL Database Server 
+4. Get Project from GitHub on to local drive C:\MS3\Projects\ContactAPI and import the project or Checkout from Version Control direct into IntellJ IDEA
+URL: https://github.com/locxnguyen/MS3API
+Diretory: C:\MS3\Projects\ContactAPI
+
+5. Modify application.properties with correct information required below;
+   1. spring.datasource.url=jdbc:**mysql://192.168.1.17:3306/ms3?serverTimezone=UTC**
+   2. spring.datasource.username=**ms3admin**
+   3. spring.datasource.password=**ms3password**
+
+6. Build, Run & Use Postman use Postman Sample below 
 
 ## Postman Sample
 * Get all Contact
