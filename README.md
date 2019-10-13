@@ -30,10 +30,10 @@ To execute this project, Please following step below
 1. Verify MySql Database Server With Scheme name MS3 is up
 2. Launch IntellJ IDEA
 3. Get hostname or ip address, DB UserID and DBPassword of MySQL Database Server from Server Admin & DBA
-4. Get Project from GitHub on to local drive and import the project or Checkout from Version Control direct into IntellJ IDEA
+4. Get Project from GitHub on to local drive and import the project or Checkout from Version Control direct into IntellJ IDEA (make sure to import Gradle)
    1. [Source Code Repository](https://github.com/locxnguyen/MS3API)
    2. Local Diretory: C:\MS3\Projects\ContactAPI
-5. Modify application.properties with correct information required below (from Server Admin & DBA;
+5. Modify application.properties with correct information required below (from Server Admin & DBA);
    1. spring.datasource.url=jdbc:**mysql://192.168.1.17:3306/ms3?serverTimezone=UTC**
    2. spring.datasource.username=**ms3admin**
    3. spring.datasource.password=**ms3password**
@@ -42,9 +42,9 @@ To execute this project, Please following step below
 ## Postman Sample
 * Launch Postman
 * [Get all Contact](http://localhost:8080/ms3test/all)
-* [Get Individual contact](http://localhost:8080/ms3test/id/1)
-* [Delete Individual Contact](http://localhost:8080/ms3test/id/1)
-* [Update Individual Contact](http://localhost:8080/ms3test/update/{1})
+* [Get Individual contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
+* [Delete Individual Contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
+* [Update Individual Contact](http://localhost:8080/ms3test/update/1)  **Must provide id number**
 
 Sample;
 '{
