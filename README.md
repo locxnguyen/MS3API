@@ -17,6 +17,7 @@ Contact Management API - This project support full CRUD operation (Get, Post, Pu
 * MySql Workbench
 * Postman 
 * InterlliJ IDEA
+* Spring Framework & Spring Boot
 * GitHub
 
 ## Prerequisite
