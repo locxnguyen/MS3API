@@ -9,11 +9,11 @@
 * [Contact](Contact)
 
 ## General
-Contact Management API - This project give ability to (Get, Post, Put & Delete)
+Contact Management API - This project support full CRUD operation (Get, Post, Put & Delete)
 
 ## Technologies
-* Oracle Virtual Box to host DB server
-* MySql Maria
+* Oracle Virtual Box to host DB server or any virtual host environment
+* MySql Database Server (Maria)
 * MySql Workbench
 * Postman 
 * InterlliJ IDEA
@@ -27,17 +27,17 @@ Contact Management API - This project give ability to (Get, Post, Put & Delete)
 
 ## Setup
 To execute this project, Please following step below
-1. Verify MySql Database Server With Scheme name MS3 is up
-2. Launch IntellJ IDEA
-3. Get hostname or ip address, DB UserID and DBPassword of MySQL Database Server from Server Admin & DBA
-4. Get Project from GitHub on to local drive and import the project or Checkout from Version Control direct into IntellJ IDEA (make sure to import Gradle)
-   1. [Source Code Repository](https://github.com/locxnguyen/MS3API)
+1. Get hostname or ip address, DB UserID and DBPassword of MySQL Database Server from Server Admin & DBA
+2. Launch MySQL Workbench and Verify MySql Database Server With Scheme name MS3 is up
+3. Launch IntellJ IDEA
+4. Get Project from GitHub on to local drive and import the project into IntellJ IDEA or Checkout Project from Version Control direct into IntellJ IDEA (make sure to import Gradle)
+   1. [Source Code Repository](https://gib.com/locxnguyen/MS3API)
    2. Local Diretory: C:\MS3\Projects\ContactAPI
 5. Modify application.properties with correct information required below (from Server Admin & DBA);
    1. spring.datasource.url=jdbc:**mysql://192.168.1.17:3306/ms3?serverTimezone=UTC**
    2. spring.datasource.username=**ms3admin**
    3. spring.datasource.password=**ms3password**
-6. Build, Run & Use Postman use Postman Sample below 
+6. Build, Run & Use Postman Sample below 
 
 ## Postman Sample
 * Launch Postman
