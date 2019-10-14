@@ -43,10 +43,21 @@ To execute this project, Please following step below
 ## Postman Sample
 * Launch Postman
 * [Get all Contact](http://localhost:8080/ms3test/all)
-* [Get Individual contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
-* [Delete Individual Contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
-* [Update Individual Contact](http://localhost:8080/ms3test/update/1)  **Must provide id number**
-  - Sample;
+  - Method: GET
+  - URL: http://localhost:8080/ms3test/all
+* [Get Individual contact](http://localhost:8080/ms3test/id/1)  
+  - Method: GET
+  - URL: http://localhost:8080/ms3test/id{1}
+  - **Must provide id number** example http://localhost:8080/ms3test/id/{1}
+* [Delete Individual Contact](http://localhost:8080/ms3test/id/1)
+  - Method: DEL
+  - URL: http://localhost:8080/ms3test/id/{1}
+ - **Must provide id number** example http://localhost:8080/ms3test/id/{1}
+* [Update Individual Contact](http://localhost:8080/ms3test/update/1)  
+  - Method: PUT
+  - URL: http://localhost:8080/ms3test/update/1
+  - **Must provide id number** example http://localhost:8080/ms3test/id/{1}
+  - Data:
       '{
        "id": 1,
        "firstName": "JohnJohn",
@@ -91,46 +102,48 @@ To execute this project, Please following step below
   }'
 
 * [Add new contact](http://localhost:8080/ms3test/add)
-  - Sample
-  '{
-    "firstName": "FirstNameGoHere",
-    "lastName": "LastNameGoHere",
-    "dob": "1980-10-22T04:00:00.000+0000",
-    "gender": "MALE",
-    "title": "Manager",
-    "addresses": [
-          {
-            "type": "Home",
-            "number": "111",
-            "street": "Main st",
-            "unit": "",
-            "city": "Sterling",
-            "state": "VA",
-            "zipCode": "34111"
-          },
-          {
-            "type": "Home",
-            "number": "200",
-            "street": "Holden rd",
-            "unit": "",
-            "city": "Richmond",
-            "state": "VA",
-            "zipCode": "43111"
-          }
-      ],
-      "communication": [
-          {
-            "type": "CELL",
-            "value": "990-110-1111",
-            "preferred": true
-          },
-          {
-            "type": "EMAIL",
-            "value": "bigman@acme.com",
-            "preferred": true
-          }
-      ]
-  }'
+  - Method: POST
+  - URL: http://localhost:8080/ms3test/add
+  - Data:
+     '{
+      "firstName": "FirstNameGoHere",
+      "lastName": "LastNameGoHere",
+      "dob": "1980-10-22T04:00:00.000+0000",
+      "gender": "MALE",
+      "title": "Manager",
+      "addresses": [
+            {
+              "type": "Home",
+              "number": "111",
+              "street": "Main st",
+              "unit": "",
+              "city": "Sterling",
+              "state": "VA",
+              "zipCode": "34111"
+            },
+            {
+              "type": "Home",
+              "number": "200",
+              "street": "Holden rd",
+              "unit": "",
+              "city": "Richmond",
+              "state": "VA",
+              "zipCode": "43111"
+            }
+        ],
+        "communication": [
+            {
+              "type": "CELL",
+              "value": "990-110-1111",
+              "preferred": true
+            },
+            {
+              "type": "EMAIL",
+              "value": "bigman@acme.com",
+              "preferred": true
+            }
+        ]
+    }'
 
 ## Contact
 * Create by Loc X. Nguyen - Feel free to contact me! 
