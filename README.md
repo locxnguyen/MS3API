@@ -45,17 +45,16 @@ To execute this project, Please following step below
 * [Get Individual contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
 * [Delete Individual Contact](http://localhost:8080/ms3test/id/1)  **Must provide id number**
 * [Update Individual Contact](http://localhost:8080/ms3test/update/1)  **Must provide id number**
-
-Sample;
-'{
-    "id": 1,
-    "firstName": "JohnJohn",
-    "lastName": "SmithSmith",
-    "dob": "1980-10-22T04:00:00.000+0000",
-    "gender": "MALE",
-    "title": "Manager",
-    "addresses": [
-        {
+  - Sample;
+      '{
+       "id": 1,
+       "firstName": "JohnJohn",
+       "lastName": "SmithSmith",
+       "dob": "1980-10-22T04:00:00.000+0000",
+       "gender": "MALE",
+       "title": "Manager",
+       "addresses": [
+          {
             "id": 2,
             "type": "Home",
             "number": "111",
@@ -64,8 +63,8 @@ Sample;
             "city": "Sterling",
             "state": "VA",
             "zipCode": "34111"
-        },
-        {
+          },
+          {
             "id": 3,
             "type": "Home",
             "number": "200",
@@ -74,33 +73,32 @@ Sample;
             "city": "Richmond",
             "state": "VA",
             "zipCode": "43111"
-        }
-    ],
-    "communication": [
-        {
+          }
+      ],
+      "communication": [
+          {
             "type": "CELL",
             "value": "990-110-1111",
             "preferred": true
-        },
-        {
+          },
+          {
             "type": "EMAIL",
             "value": "acme@acme.com",
             "preferred": true
-        }
-    ]
-}'
+          }
+      ]
+  }'
 
 * [Add new contact](http://localhost:8080/ms3test/add)
-
-Sample
-'{
+  - Sample
+  '{
     "firstName": "FirstNameGoHere",
     "lastName": "LastNameGoHere",
     "dob": "1980-10-22T04:00:00.000+0000",
     "gender": "MALE",
     "title": "Manager",
     "addresses": [
-        {
+          {
             "type": "Home",
             "number": "111",
             "street": "Main st",
@@ -108,8 +106,8 @@ Sample
             "city": "Sterling",
             "state": "VA",
             "zipCode": "34111"
-        },
-        {
+          },
+          {
             "type": "Home",
             "number": "200",
             "street": "Holden rd",
@@ -117,23 +115,23 @@ Sample
             "city": "Richmond",
             "state": "VA",
             "zipCode": "43111"
-        }
-    ],
-    "communication": [
-        {
+          }
+      ],
+      "communication": [
+          {
             "type": "CELL",
             "value": "990-110-1111",
             "preferred": true
-        },
-        {
+          },
+          {
             "type": "EMAIL",
             "value": "bigman@acme.com",
             "preferred": true
-        }
-    ]
-}'
+          }
+      ]
+  }'
 
 ## Contact
 * Create by Loc X. Nguyen - Feel free to contact me! 
-* Cell:  202 427-5060
+* Email:  locxnguyen@hotmail.com
 
